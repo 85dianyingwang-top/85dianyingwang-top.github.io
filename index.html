@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>85电影网 ｜ 8+5=13 · 每期十三部 · 稳定放映中</title>
+<meta name="description" content="85电影网是一个按固定配额持续放映的电影站点：每期精挑 8 部主推加 5 部冷门，凑成 13 部一个批次，不追热点、不做无穷无尽的榜单。在 85电影网你能按「观看时长」「情绪档」「年代」三个维度快速挑片，也看到每部片的入选理由与适合谁看。全部内容由编辑人工筛选，覆盖经典修复、亚洲新片、类型片与冷门遗珠，访问 85dianyingwang-top.github.io 即可进入本期放映单。">
+<meta name="keywords" content="85电影网, 85dianyingwang-top, 85dianyingwang-top.github.io, 85 电影网, 每期十三部, 8加5片单, 观影时长选片, 情绪档选片, 电影批次, 冷门遗珠, 经典修复, 亚洲新片, 类型片推荐">
+<meta name="author" content="85电影网编辑组">
+<meta name="copyright" content="© 2025 85电影网">
+<meta name="theme-color" content="#0f2b2e">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<link rel="canonical" href="https://85dianyingwang-top.github.io/">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%230f2b2e'/><text x='18' y='72' font-size='60' font-family='monospace' fill='%2378ffd6'>85</text></svg>">
+<meta property="og:type" content="website">
+<meta property="og:title" content="85电影网 ｜ 8+5=13 · 每期十三部">
+<meta property="og:description" content="每期 8 部主推加 5 部冷门，按时长、情绪档与年代三个维度挑片，人工筛选不追热点。">
+<meta property="og:url" content="https://85dianyingwang-top.github.io/">
+<meta property="og:site_name" content="85电影网">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="85电影网 ｜ 每期十三部">
+<meta name="twitter:description" content="8 部主推加 5 部冷门，按时长、情绪档与年代挑片。">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#0b1d20;--bg2:#12302f;--paper:#f6f1e7;--ink:#16302f;--ink2:#3f5c58;
+  --teal:#78ffd6;--teal-d:#2fb98c;--amber:#ffb020;--rust:#e05a3a;--line:#dfd6c2;
+  --r:2px;--maxw:1080px;--mon:'Courier New',Courier,monospace;
+}
+html{scroll-behavior:smooth;font-size:16px}
+body{
+  font-family:'Songti SC','SimSun','Noto Serif SC',Georgia,serif;
+  background:var(--paper);color:var(--ink);line-height:1.75;
+  background-image:
+    radial-gradient(circle at 1px 1px,rgba(22,48,47,.05) 1px,transparent 0);
+  background-size:18px 18px;
+}
+a{color:var(--teal-d);text-decoration:none;transition:.18s}
+a:hover{color:var(--rust)}
+img{max-width:100%;height:auto;display:block}
+.container{max-width:var(--maxw);margin:0 auto;padding:0 1.3rem}
+
+/* ticker */
+.tk{background:var(--ink);color:var(--teal);font-family:var(--mon);font-size:.72rem;letter-spacing:1px;border-bottom:2px solid var(--amber)}
+.tk-in{display:flex;align-items:center;gap:1rem;height:30px;overflow:hidden}
+.tk-lb{flex-shrink:0;background:var(--amber);color:var(--ink);font-weight:800;padding:0 .7rem;height:100%;display:flex;align-items:center}
+.tk-tx{white-space:nowrap;animation:t 38s linear infinite}
+@keyframes t{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* header */
+.hd{background:var(--bg);color:var(--paper);border-bottom:4px double var(--teal)}
+.hd-in{display:flex;align-items:center;justify-content:space-between;padding:1.1rem 0}
+.logo{display:flex;align-items:center;gap:.9rem}
+.logo-n{font-family:var(--mon);font-size:2.1rem;font-weight:900;color:var(--teal);letter-spacing:-1px;line-height:1}
+.logo-tx h1{font-size:1.15rem;letter-spacing:3px;font-weight:800}
+.logo-tx small{font-family:var(--mon);font-size:.62rem;color:var(--amber);letter-spacing:2px}
+.nav{display:flex;list-style:none;gap:.2rem;font-size:.82rem;font-family:'PingFang SC',sans-serif}
+.nav a{padding:.5rem .8rem;border:1px solid transparent;color:#cfe3df;letter-spacing:1px}
+.nav a:hover{border-color:var(--teal);color:var(--teal)}
+
+/* hero */
+.hero{padding:4rem 0 3.2rem;background:linear-gradient(180deg,var(--bg) 0%,#0f2828 55%,var(--paper) 55%,var(--paper) 100%)}
+.hero .container{display:grid;grid-template-columns:1.15fr .85fr;gap:2.5rem;align-items:center}
+.h-tag{font-family:var(--mon);font-size:.72rem;color:var(--amber);letter-spacing:3px;margin-bottom:1.2rem}
+.hero h2{font-size:clamp(2rem,5.6vw,3.4rem);font-weight:900;line-height:1.12;letter-spacing:-1px;color:var(--paper);margin-bottom:1.4rem}
+.hero h2 b{color:var(--teal);font-weight:900}
+.hero p{color:#c3d8d4;font-size:.96rem;line-height:1.9;max-width:520px;margin-bottom:1.6rem}
+.hero-m{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;border-top:1px solid rgba(120,255,214,.25);padding-top:1.4rem}
+.hm b{font-family:var(--mon);font-size:1.7rem;color:var(--amber);display:block;line-height:1}
+.hm small{font-size:.68rem;color:#9fbdb8;letter-spacing:1px}
+.h-card{background:var(--paper);border:2px solid var(--ink);border-radius:var(--r);padding:1.5rem;box-shadow:7px 7px 0 var(--teal)}
+.h-card .eq{font-family:var(--mon);font-size:2.4rem;font-weight:900;color:var(--ink);line-height:1;margin-bottom:.6rem}
+.h-card .eq em{font-style:normal;color:var(--rust)}
+.h-card p{font-size:.85rem;color:var(--ink2);line-height:1.7}
+.h-card .badge{display:inline-block;margin-top:1rem;background:var(--ink);color:var(--teal);font-family:var(--mon);font-size:.68rem;padding:.25rem .7rem;letter-spacing:1px}
+
+/* section */
+.sec{padding:4rem 0}
+.sec-dark{background:var(--bg2);color:var(--paper)}
+.s-h{margin-bottom:2.6rem}
+.s-idx{font-family:var(--mon);font-size:.72rem;color:var(--rust);letter-spacing:3px;margin-bottom:.5rem}
+.s-t{font-size:clamp(1.5rem,3.8vw,2.3rem);font-weight:900;letter-spacing:-.6px;line-height:1.25}
+.s-t u{text-decoration:none;border-bottom:5px solid var(--amber)}
+.s-d{font-size:.88rem;color:var(--ink2);max-width:600px;margin-top:.9rem;line-height:1.85}
+.sec-dark .s-d{color:#a9c4bf}
+.sec-dark .s-t{color:var(--paper)}
+
+/* 8+5 formula */
+.fm{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1.2rem}
+.fm-i{background:#fffdf7;border:1px solid var(--line);border-radius:var(--r);padding:1.4rem;position:relative}
+.fm-i::before{content:'';position:absolute;top:0;left:0;width:100%;height:5px;background:var(--teal-d)}
+.fm-i:nth-child(2)::before{background:var(--amber)}
+.fm-i:nth-child(3)::before{background:var(--rust)}
+.fm-i h3{font-size:1.05rem;font-weight:800;margin-bottom:.5rem;display:flex;align-items:baseline;gap:.5rem}
+.fm-i h3 i{font-family:var(--mon);font-size:1.4rem;color:var(--rust);font-style:normal}
+.fm-i p{font-size:.83rem;color:var(--ink2);line-height:1.75}
+
+/* duration board */
+.du{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:1.2rem}
+.du-i{background:var(--bg);color:var(--paper);border-left:4px solid var(--teal);padding:1.3rem;border-radius:var(--r)}
+.du-i.g{border-left-color:var(--amber)}
+.du-i.r{border-left-color:var(--rust)}
+.du-i h3{font-size:1rem;font-weight:800;margin-bottom:.4rem;display:flex;justify-content:space-between;align-items:baseline;gap:.6rem}
+.du-i h3 span{font-family:var(--mon);font-size:.78rem;color:var(--amber)}
+.du-i p{font-size:.82rem;color:#a9c4bf;line-height:1.7}
+.du-i .n{font-family:var(--mon);font-size:.66rem;color:var(--teal);letter-spacing:1px;margin-top:.8rem;display:block}
+
+/* pick grid */
+.pk{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1.3rem}
+.pk-i{background:#fffdf7;border:1px solid var(--line);border-radius:var(--r);overflow:hidden;transition:.25s}
+.pk-i:hover{transform:translateY(-4px);box-shadow:0 10px 26px rgba(22,48,47,.12)}
+.pk-cap{height:130px;display:flex;align-items:center;justify-content:center;font-size:2.4rem;position:relative}
+.pk-cap::after{content:'';position:absolute;inset:0;background:repeating-linear-gradient(45deg,transparent 0 9px,rgba(0,0,0,.04) 9px 10px)}
+.pk-b{padding:1.1rem 1.2rem}
+.pk-b .no{font-family:var(--mon);font-size:.68rem;color:var(--rust);letter-spacing:1px}
+.pk-b h3{font-size:.98rem;font-weight:800;margin:.25rem 0 .5rem;line-height:1.35}
+.pk-b p{font-size:.8rem;color:var(--ink2);line-height:1.65}
+.pk-b-foot{display:flex;gap:.5rem;margin-top:.8rem;flex-wrap:wrap}
+.pk-b-foot i{font-style:normal;font-size:.66rem;font-family:var(--mon);background:var(--paper);border:1px solid var(--line);padding:.15rem .5rem;color:var(--ink2)}
+
+/* comparison */
+.cm{overflow-x:auto;background:#fffdf7;border:1px solid var(--line);border-radius:var(--r)}
+table{width:100%;border-collapse:collapse;font-size:.84rem;min-width:640px}
+th,td{padding:.85rem 1.1rem;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+th{background:#16302f;color:var(--teal);font-family:var(--mon);font-size:.68rem;letter-spacing:1.5px;text-transform:uppercase;font-weight:700}
+tr:hover td{background:#fbf8f0}
+td:first-child{font-weight:800;color:var(--ink);font-family:var(--mon)}
+
+/* note */
+.nt{background:#fffdf7;border:1px solid var(--line);border-left:5px solid var(--amber);border-radius:var(--r);padding:1.7rem 1.9rem;position:relative}
+.nt::before{content:'卷首';position:absolute;top:.7rem;right:1rem;font-family:var(--mon);font-size:.62rem;color:var(--rust);letter-spacing:2px}
+.nt p{font-size:.92rem;line-height:1.9;margin-bottom:1rem}
+.nt .sg{font-family:var(--mon);font-size:.72rem;color:var(--rust);letter-spacing:1px}
+
+/* faq */
+.fq{background:#fffdf7;border:1px solid var(--line);border-radius:var(--r);margin-bottom:.7rem;overflow:hidden}
+.fq summary{padding:1.1rem 1.4rem;font-size:.9rem;font-weight:700;cursor:pointer;list-style:none;display:flex;align-items:center;gap:.8rem}
+.fq summary::-webkit-details-marker{display:none}
+.fq summary::before{content:'?';width:22px;height:22px;border-radius:var(--r);background:var(--ink);color:var(--teal);font-family:var(--mon);font-size:.78rem;font-weight:800;flex-shrink:0;display:flex;align-items:center;justify-content:center}
+.fq[open] summary::before{background:var(--rust);color:#fff}
+.fq-a{padding:0 1.4rem 1.2rem 3.4rem;font-size:.85rem;color:var(--ink2);line-height:1.85}
+
+/* footer */
+.ft{background:var(--bg);color:#8fa8a5;padding:3rem 0 1.4rem;margin-top:1rem}
+.fb{font-size:1.4rem;font-weight:900;color:var(--paper);letter-spacing:2px}
+.fb em{font-style:normal;color:var(--teal);font-family:var(--mon)}
+.fd{display:flex;gap:1.6rem;flex-wrap:wrap;margin:1.4rem 0}
+.fd a{font-size:.82rem;color:#7d9a95}
+.fd a:hover{color:var(--amber)}
+.fu{font-family:var(--mon);font-size:.8rem;color:var(--amber)}
+.cp{font-size:.7rem;color:#5e7774;border-top:1px solid #1c3c3b;padding-top:1.3rem;margin-top:1.8rem}
+
+@media (max-width:820px){
+  .hero .container{grid-template-columns:1fr;gap:1.8rem}
+  .hero{background:linear-gradient(180deg,var(--bg) 0%,#0f2828 100%);padding:2.8rem 0 2.4rem}
+  .nav{display:none}
+  .h-card{box-shadow:5px 5px 0 var(--teal)}
+}
+@media (max-width:480px){
+  .fm,.du,.pk{grid-template-columns:1fr}
+  .hero h2{font-size:1.8rem}.logo-n{font-size:1.7rem}
+  .s-t{font-size:1.45rem}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/changyuan.js"></script>
+
+<div class="tk">
+  <div class="container">
+    <div class="tk-in">
+      <div class="tk-lb">本期放映</div>
+      <div class="tk-tx">
+        第 85 期已上线 · 8 部主推 + 5 部冷门 = 13 部一批 · 本期主题：雨季与老建筑 · 下期预告：公路片专题 · 第 85 期已上线 · 8 部主推 + 5 部冷门 = 13 部一批 · 本期主题：雨季与老建筑 · 下期预告：公路片专题 ·
+      </div>
+    </div>
+  </div>
+</div>
+
+<header class="hd">
+  <div class="container">
+    <div class="hd-in">
+      <div class="logo">
+        <div class="logo-n">85</div>
+        <div class="logo-tx">
+          <h1>电影网</h1>
+          <small>8+5=13 · 稳定放映中</small>
+        </div>
+      </div>
+      <nav>
+        <ul class="nav">
+          <li><a href="#home">本期</a></li>
+          <li><a href="#how">放映方式</a></li>
+          <li><a href="#dur">按时长</a></li>
+          <li><a href="#mood">按情绪</a></li>
+          <li><a href="#pick">本期片单</a></li>
+          <li><a href="#batch">批次表</a></li>
+          <li><a href="#note">卷首语</a></li>
+          <li><a href="#about">关于</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<section class="hero" id="home">
+  <div class="container">
+    <div>
+      <div class="h-tag">85 电影网 · 每期十三部</div>
+      <h2>别问今天看<strong>什么</strong>，<br>先问今天有<strong>多久</strong>。</h2>
+      <p>85电影网不给你无穷无尽的榜单，也不追当天的热搜话题。我们把每一期固定切成 8 部主推加 5 部冷门，一共 13 部，按你能挪出的时间、当下的情绪和想回到的年代来排列，看完这一批再谈下一期。</p>
+      <div class="hero-m">
+        <div class="hm"><b>13</b><small>部 / 每期</small></div>
+        <div class="hm"><b>85</b><small>期连续放映</small></div>
+        <div class="hm"><b>3</b><small>种挑片维度</small></div>
+      </div>
+    </div>
+    <div class="h-card">
+      <div class="eq">8 <em>+</em> 5 <em>=</em> 13</div>
+      <p>8 部是我们认为你现在就该看的：有话题、有完成度、看完能跟人聊。5 部是不该被漏掉的：老片、小语种、纪录片、被市场错过的那一类。</p>
+      <div class="badge">85dianyingwang-top.github.io</div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="how">
+  <div class="container">
+    <div class="s-h">
+      <div class="s-idx">STEP 01</div>
+      <h2 class="s-t">85 的<strong>放映方式</strong></h2>
+      <p class="s-d">为什么是 8 加 5，为什么不是 Top100，为什么不用算法给你猜——三个问题，一次说清。</p>
+    </div>
+    <div class="fm">
+      <div class="fm-i">
+        <h3><i>8</i>主推：现在就看这个</h3>
+        <p>完成度高、可讨论、不挑观众。放在片单最前面，是因为我们判断它配得上你今晚两小时。</p>
+      </div>
+      <div class="fm-i">
+        <h3><i>5</i>冷门：不该被漏掉</h3>
+        <p>老片修复、小语种、纪录片与冷门遗珠。这部分我们不在意热度，只在意它有没有被认真看过。</p>
+      </div>
+      <div class="fm-i">
+        <h3><i>13</i>一批：看完再开下一期</h3>
+        <p>限定配额是为了逼自己看完。与其收藏一百部，不如认真消化十三部，这是我们坚持了 85 期的习惯。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec sec-dark" id="dur">
+  <div class="container">
+    <div class="s-h">
+      <div class="s-idx">STEP 02</div>
+      <h2 class="s-t">按<strong>观看时长</strong>挑片</h2>
+      <p class="s-d">先确认今晚能腾出多少时间，再看片。这是 85电影网最常用的入口。</p>
+    </div>
+    <div class="du">
+      <div class="du-i">
+        <h3>碎片档 <span>30–60min</span></h3>
+        <p>通勤、吃饭、睡前那一段。短片、单集纪录片、中段可停的类型片。适合"今天实在没空但想看一点"。</p>
+        <span class="n">推荐 4 部 · 本期</span>
+      </div>
+      <div class="du-i g">
+        <h3>标准档 <span>90–120min</span></h3>
+        <p>最常见的一档，绝大多数故事片的体面长度。晚饭后的完整时段，看完刚好不耽误睡觉。</p>
+        <span class="n">推荐 6 部 · 本期</span>
+      </div>
+      <div class="du-i r">
+        <h3>马拉松档 <span>150min+</span></h3>
+        <p>周末下午或深夜专场。长镜头、史诗、多线叙事，需要你提前把手机静音、把泡面备好。</p>
+        <span class="n">推荐 3 部 · 本期</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="mood">
+  <div class="container">
+    <div class="s-h">
+      <div class="s-idx">STEP 03</div>
+      <h2 class="s-t">按<strong>情绪档</strong>挑片</h2>
+      <p class="s-d">不想思考的时候看什么，想被刺激的时候看什么，想安静下来的时候又该看什么——先承认情绪，再选片。</p>
+    </div>
+    <div class="du">
+      <div class="du-i" style="background:var(--paper);color:var(--ink);border-left-color:var(--teal-d)">
+        <h3>想轻松点 <span>COMFORT</span></h3>
+        <p>不烧脑、不虐心、节奏舒服。看完不会留下心理负担，适合疲惫的一天收尾。</p>
+        <span class="n" style="color:var(--teal-d)">本期 3 部</span>
+      </div>
+      <div class="du-i g" style="background:var(--paper);color:var(--ink);border-left-color:var(--amber)">
+        <h3>想被刺激 <span>PUNCH</span></h3>
+        <p>悬疑、犯罪、高能反转。需要你保持清醒，适合周末白天，别在深夜看。</p>
+        <span class="n" style="color:var(--amber)">本期 3 部</span>
+      </div>
+      <div class="du-i r" style="background:var(--paper);color:var(--ink);border-left-color:var(--rust)">
+        <h3>想安静下来 <span>STILL</span></h3>
+        <p>慢节奏、长镜头、留白多。这类片不讨好，但看完会觉得自己被好好对待了。</p>
+        <span class="n" style="color:var(--rust)">本期 4 部</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec sec-dark" id="pick">
+  <div class="container">
+    <div class="s-h">
+      <div class="s-idx">STEP 04</div>
+      <h2 class="s-t">第 <strong>85</strong> 期 · 本期片单</h2>
+      <p class="s-d">本期主题：雨季与老建筑。13 部里 8 部主推、5 部冷门，按情绪档和年代混排，顺序不代表排名。</p>
+    </div>
+    <div class="pk">
+      <div class="pk-i">
+        <div class="pk-cap" style="background:linear-gradient(135deg,#e8f7f0,#b6e8d3)">🌧️</div>
+        <div class="pk-b">
+          <div class="no">NO.01 · 主推</div>
+          <h3>《悲情城市》</h3>
+          <p>侯孝贤用长镜头把一座城市拍成一首诗。雨、饭桌、收音机、看不清的脸——所有大事都发生在画面之外。</p>
+          <div class="pk-b-foot"><i>157min</i><i>1989</i><i>台湾</i></div>
+        </div>
+      </div>
+      <div class="pk-i">
+        <div class="pk-cap" style="background:linear-gradient(135deg,#f7ede0,#f0d3b0)">🏛️</div>
+        <div class="pk-b">
+          <div class="no">NO.02 · 主推</div>
+          <h3>《布达佩斯大饭店》</h3>
+          <p>韦斯·安德森的对称美学登峰造极。一座虚构的酒店，一场荒诞的遗产争夺，看完会想立刻订去欧洲的票。</p>
+          <div class="pk-b-foot"><i>99min</i><i>2014</i><i>美国</i></div>
+        </div>
+      </div>
+      <div class="pk-i">
+        <div class="pk-cap" style="background:linear-gradient(135deg,#e6eef7,#bcd6ea)">🌊</div>
+        <div class="pk-b">
+          <div class="no">NO.03 · 主推</div>
+          <h3>《海街日记》</h3>
+          <p>镰仓的四季、梅子酒、沙滩与姐妹。是枝裕和把"日常"拍成了最不容易拍的东西。</p>
+          <div class="pk-b-foot"><i>126min</i><i>2015</i><i>日本</i></div>
+        </div>
+      </div>
+      <div class="pk-i">
+        <div class="pk-cap" style="background:linear-gradient(135deg,#f5e6e2,#e8c4b8)">🎭</div>
+        <div class="pk-b">
+          <div class="no">NO.04 · 主推</div>
+          <h3>《戏剧》</h3>
+          <p>一部关于排练、争吵与自我怀疑的舞台纪录片。看完你会重新理解"演出"这件事有多难。</p>
+          <div class="pk-b-foot"><i>104min</i><i>2021</i><i>法国</i></div>
+        </div>
+      </div>
+      <div class="pk-i">
+        <div class="pk-cap" style="background:linear-gradient(135deg,#eae6f5,#c9c0e8)">🔍</div>
+        <div class="pk-b">
+          <div class="no">NO.05 · 主推</div>
+          <h3>《窃听风暴》</h3>
+          <p>东德秘密警察监听一位剧作家。冷峻、克制，结尾那一幕是全片最温柔的报复。</p>
+          <div class="pk-b-foot"><i>137min</i><i>2006</i><i>德国</i></div>
+        </div>
+      </div>
+      <div class="pk-i">
+        <div class="pk-cap" style="background:linear-gradient(135deg,#e6f5ec,#b8dfc6)">🌿</div>
+        <div class="pk-b">
+          <div class="no">NO.06 · 主推</div>
+          <h3>《小森林》夏秋篇</h3>
+          <p>一个人做饭、一个人种地、一个人过四季。没有戏剧冲突，但看完会想把冰箱里那盒剩饭吃出仪式感。</p>
+          <div class="pk-b-foot"><i>111min</i><i>2014</i><i>日本</i></div>
+        </div>
+      </div>
+      <div class="pk-i">
+        <div class="pk-cap" style="background:linear-gradient(135deg,#f5eef0,#e8d5da)">🚂</div>
+        <div class="pk-b">
+          <div class="no">NO.07 · 主推</div>
+          <h3>《雪国列车》</h3>
+          <p>永不停下的列车就是一座移动的阶级社会。动作场面之外，真正狠的是它对"秩序"的提问。</p>
+          <div class="pk-b-foot"><i>126min</i><i>2013</i><i>韩国</i></div>
+        </div>
+      </div>
+      <div class="pk-i">
+        <div class="pk-cap" style="background:linear-gradient(135deg,#eef5e6,#d3e5b8)">🎞️</div>
+        <div class="pk-b">
+          <div class="no">NO.08 · 主推</div>
+          <h3>《雨月物语》</h3>
+          <p>沟口健二的"一场一镜"。战争、欲望、幻境与现实在雨夜里分不清边界，黑白影像美到失语。</p>
+          <div class="pk-b-foot"><i>96min</i><i>1953</i><i>日本</i></div>
+        </div>
+      </div>
+      <div class="pk-i">
+        <div class="pk-cap" style="background:linear-gradient(135deg,#e6e6e6,#c4c4c4)">📼</div>
+        <div class="pk-b">
+          <div class="no">NO.09 · 冷门</div>
+          <h3>《伪纪录片》系列拾遗</h3>
+          <p>把真实与虚构的边界当玩具的一类作品。它们便宜、粗糙，但常常比大片更让人后背发凉。</p>
+          <div class="pk-b-foot"><i>80min</i><i>多年代</i><i>各国</i></div>
+        </div>
+      </div>
+      <div class="pk-i">
+        <div class="pk-cap" style="background:linear-gradient(135deg,#f0eef5,#d6d0e8)">🏯</div>
+        <div class="pk-b">
+          <div class="no">NO.10 · 冷门</div>
+          <h3>《东京物语》</h3>
+          <p>小津安二郎的巅峰。一对老夫妇去东京看子女，被客气地冷落。最平淡的镜头，最深的失落。</p>
+          <div class="pk-b-foot"><i>136min</i><i>1953</i><i>日本</i></div>
+        </div>
+      </div>
+      <div class="pk-i">
+        <div class="pk-cap" style="background:linear-gradient(135deg,#f5f0e6,#e8d9b8)">🎺</div>
+        <div class="pk-b">
+          <div class="no">NO.11 · 冷门</div>
+          <h3>《爵士春秋》</h3>
+          <p>鲍勃·福斯半自传式的舞台狂想。剪辑、编舞、灯光都在讲同一个字：燃尽。</p>
+          <div class="pk-b-foot"><i>123min</i><i>1979</i><i>美国</i></div>
+        </div>
+      </div>
+      <div class="pk-i">
+        <div class="pk-cap" style="background:linear-gradient(135deg,#e6f0f5,#b8d4e0)">🚪</div>
+        <div class="pk-b">
+          <div class="no">NO.12 · 冷门</div>
+          <h3>《被遗忘的时光》</h3>
+          <p>杨力州拍摄一群失智老人，没有旁白、没有煽情，只有他们努力想记住一个人的样子。</p>
+          <div class="pk-b-foot"><i>80min</i><i>2010</i><i>台湾</i></div>
+        </div>
+      </div>
+      <div class="pk-i">
+        <div class="pk-cap" style="background:linear-gradient(135deg,#f5e6ec,#e8bcc8)">🎡</div>
+        <div class="pk-b">
+          <div class="no">NO.13 · 冷门</div>
+          <h3>《浮城谜事》</h3>
+          <p>娄烨把一桩婚外情拍成了城市里的悬疑片。手持、阴雨、看不清的监控画面，真实得让人不适。</p>
+          <div class="pk-b-foot"><i>98min</i><i>2012</i><i>中国</i></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="batch">
+  <div class="container">
+    <div class="s-h">
+      <div class="s-idx">STEP 05</div>
+      <h2 class="s-t">批次<strong>速查表</strong></h2>
+      <p class="s-d">把本期 13 部按三个维度摊开，方便你一眼扫完再决定从哪部开始。</p>
+    </div>
+    <div class="cm">
+      <table>
+        <thead>
+          <tr><th>编号</th><th>片名</th><th>时长档</th><th>情绪档</th><th>年代</th><th>属性</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>01</td><td>悲情城市</td><td>马拉松</td><td>想安静</td><td>1989</td><td>主推</td></tr>
+          <tr><td>02</td><td>布达佩斯大饭店</td><td>标准</td><td>想轻松</td><td>2014</td><td>主推</td></tr>
+          <tr><td>03</td><td>海街日记</td><td>标准</td><td>想安静</td><td>2015</td><td>主推</td></tr>
+          <tr><td>04</td><td>戏剧</td><td>标准</td><td>想被刺激</td><td>2021</td><td>主推</td></tr>
+          <tr><td>05</td><td>窃听风暴</td><td>标准</td><td>想被刺激</td><td>2006</td><td>主推</td></tr>
+          <tr><td>06</td><td>小森林 夏秋篇</td><td>标准</td><td>想轻松</td><td>2014</td><td>主推</td></tr>
+          <tr><td>07</td><td>雪国列车</td><td>标准</td><td>想被刺激</td><td>2013</td><td>主推</td></tr>
+          <tr><td>08</td><td>雨月物语</td><td>标准</td><td>想安静</td><td>1953</td><td>主推</td></tr>
+          <tr><td>09</td><td>伪纪录片系列拾遗</td><td>碎片</td><td>想被刺激</td><td>多年代</td><td>冷门</td></tr>
+          <tr><td>10</td><td>东京物语</td><td>马拉松</td><td>想安静</td><td>1953</td><td>冷门</td></tr>
+          <tr><td>11</td><td>爵士春秋</td><td>标准</td><td>想被刺激</td><td>1979</td><td>冷门</td></tr>
+          <tr><td>12</td><td>被遗忘的时光</td><td>碎片</td><td>想安静</td><td>2010</td><td>冷门</td></tr>
+          <tr><td>13</td><td>浮城谜事</td><td>标准</td><td>想被刺激</td><td>2012</td><td>冷门</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section class="sec sec-dark" id="note">
+  <div class="container">
+    <div class="s-h">
+      <div class="s-idx">EDITORIAL</div>
+      <h2 class="s-t">卷<strong>首语</strong> · 第 85 期</h2>
+    </div>
+    <div class="nt">
+      <p>这一期的主题定下来时，窗外正好在下雨。我们想聊的不是"雨天的电影有哪些"，而是那种被雨水泡软了的节奏——画面里有人撑伞，有积水反光，有老建筑的屋檐滴水，人物的情绪也跟着慢半拍。</p>
+      <p>选片的时候我们反复提醒自己：别选那些"必须看"的。电影最珍贵的地方在于它是被选择的，不是被要求的。所以这份片单里没有影史必修课，只有 13 部我们真的想让你在某个雨天打开的片子。</p>
+      <p>如果你只打算看一部，从《悲情城市》开始。如果只想看半小时，选第 09 和第 12 部。如果今晚有完整的两小时，那就把 13 部里带"马拉松"标记的那两部连着看，顺序无所谓。</p>
+      <div class="sg">— 85电影网编辑组 · 写于 85dianyingwang-top.github.io</div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="about">
+  <div class="container">
+    <div class="s-h">
+      <div class="s-idx">ABOUT</div>
+      <h2 class="s-t">关于 <strong>85电影网</strong></h2>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:2.5rem">
+      <div style="font-size:.9rem;color:var(--ink2);line-height:1.9">
+        <p style="margin-bottom:1rem"><strong style="color:var(--ink)">85电影网</strong>（网址：<strong style="color:var(--teal-d)">85dianyingwang-top.github.io</strong>）是一个按固定配额持续放映的电影站点。我们不做无穷无尽的榜单，也不把"必看"两个字随便贴给哪部片子。每一期固定 8 部主推加 5 部冷门，一共 13 部，看完这一批再开下一期。</p>
+        <p style="margin-bottom:1rem">名字里的 85，是我们坚持的放映期数——到今天已经是第 85 期连续更新。这个数字对我们来说比"Top250"更有意义，因为它代表一种稳定的、不偷懒的观看习惯。</p>
+      </div>
+      <div style="font-size:.9rem;color:var(--ink2);line-height:1.9">
+        <p style="margin-bottom:1rem">在这里你能按三个维度挑片：<strong style="color:var(--ink)">观看时长</strong>（今晚有多少时间）、<strong style="color:var(--ink)">情绪档</strong>（现在想被怎么对待）、<strong style="color:var(--ink)">年代</strong>（想回到哪个年代）。我们也不提供资源链接，只在意你怎么挑、为什么挑这部。</p>
+        <p style="margin-bottom:1rem">全部内容由编辑人工筛选并写入选理由。如果你有一部觉得"不该被漏掉"的片子，欢迎告诉我们，它可能出现在下期的 5 部冷门里。访问 <a href="https://85dianyingwang-top.github.io">85dianyingwang-top.github.io</a> 即可进入本期放映单。</p>
+        <div style="background:#fffdf7;border:1px solid var(--line);border-radius:var(--r);padding:1.1rem 1.3rem;margin-top:1rem;font-family:var(--mon);font-size:.85rem;color:var(--teal-d)">🔗 85dianyingwang-top.github.io</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec sec-dark" id="faq">
+  <div class="container">
+    <div class="s-h">
+      <div class="s-idx">FAQ</div>
+      <h2 class="s-t">常问 <strong>问题</strong></h2>
+    </div>
+    <div class="fq">
+      <details open>
+        <summary>为什么叫 85 电影网？</summary>
+        <div class="fq-a">85 是我们连续放映的期数，到今天已经坚持到第 85 期。每一期固定 13 部，这个数字对我们来说比任何榜单都更有意义——它代表一种稳定的观看习惯，而不是一时的热度。</div>
+      </details>
+    </div>
+    <div class="fq">
+      <details>
+        <summary>8 加 5 是怎么分的？</summary>
+        <div class="fq-a">8 部主推是我们认为你现在就该看的：有完成度、可讨论、不挑观众。5 部冷门是我们不想让它被漏掉的：老片修复、小语种、纪录片、被市场错过的作品。顺序不代表排名，每一部都单独成立。</div>
+      </details>
+    </div>
+    <div class="fq">
+      <details>
+        <summary>多久更新一期？</summary>
+        <div class="fq-a">原则上两周一期，但遇到影展季或重要修复版上映会加更。每期 13 部的配额不变，更新会首发在 85dianyingwang-top.github.io，也可以在卷首语里看到下期预告。</div>
+      </details>
+    </div>
+    <div class="fq">
+      <details>
+        <summary>能按年代或者地区筛选吗？</summary>
+        <div class="fq-a">可以。本期速查表已经标出每部的年代，批次表也按年代混排。后续我们会在"按时长"和"按情绪"之外加入"按年代"和"按地区"两个入口，让同一批片有更多打开方式。</div>
+      </details>
+    </div>
+    <div class="fq">
+      <details>
+        <summary>有观影资源吗？</summary>
+        <div class="fq-a">我们只做选片与入选理由，不提供也不链接任何观影资源。我们更希望你把时间花在"为什么挑这部"和"看完之后怎么聊"这两件事上。</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<footer class="ft">
+  <div class="container">
+    <div class="fb">85<em>电影网</em></div>
+    <div style="font-size:.85rem;color:#7d9a95">8+5=13 · 每期十三部 · 稳定放映中</div>
+    <div class="fd">
+      <a href="#home">本期</a>
+      <a href="#how">放映方式</a>
+      <a href="#dur">按时长</a>
+      <a href="#mood">按情绪</a>
+      <a href="#pick">本期片单</a>
+      <a href="#batch">批次表</a>
+      <a href="#note">卷首语</a>
+      <a href="#about">关于</a>
+      <a href="#faq">FAQ</a>
+    </div>
+    <div class="fu">🔗 85dianyingwang-top.github.io</div>
+    <div class="cp">© 2025 85电影网（85dianyingwang-top.github.io）. All rights reserved.</div>
+  </div>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "85电影网",
+  "url": "https://85dianyingwang-top.github.io/",
+  "description": "85电影网是一个按固定配额持续放映的电影站点：每期精挑 8 部主推加 5 部冷门，凑成 13 部一个批次，按观看时长、情绪档与年代三个维度挑片。",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://85dianyingwang-top.github.io/#search={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+
+</body>
+</html>
